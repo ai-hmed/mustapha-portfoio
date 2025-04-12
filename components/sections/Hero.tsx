@@ -38,7 +38,7 @@ export default function Hero() {
                 </div>
                 
                 {/* Profile Image */}
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl bg-card">
+                <div className="w-[250px] h-[250px] rounded-full overflow-hidden border-4 border-primary shadow-xl bg-card animate-zoom-in">
                   <img
                     src={profileImage}
                     alt="Mostapha Eddaoudi"
@@ -56,8 +56,8 @@ export default function Hero() {
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                   Mostapha Eddaoudi
                 </h1>
-                <p className="text-xl md:text-2xl text-primary font-medium">
-                  Koch mit Leidenschaft
+                <p className="text-xl md:text-2xl text-primary font-medium uppercase tracking-wide">
+                  MASTER CHEF | CULINARY INNOVATOR
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Marokkanischer Koch mit Liebe zur deutschen Küche. Spezialisiert auf die Fusion von traditionellen 
@@ -108,13 +108,12 @@ export default function Hero() {
                 </Button> */}
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="gap-2 hover:bg-primary/5 transition-colors w-full sm:w-auto"
+                  className="gap-2 bg-primary text-white hover:bg-primary/90 transition-colors w-full sm:w-auto"
                   asChild
                 >
                   <a href="/Lebenslauf.pdf" download>
-                    <Download className="h-4 w-4" />
-                    Lebenslauf
+                    <Download className="h-5 w-5" />
+                    Download Resume
                   </a>
                 </Button>
               </div>
